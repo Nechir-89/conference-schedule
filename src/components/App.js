@@ -1,5 +1,7 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import Data from './data';
+import ConferenceCard from './ConferenceCard';
 
 
 class App extends React.Component {
@@ -13,11 +15,14 @@ class App extends React.Component {
   }
 
   render() {
+    const { conferences } = this.state
+
     return (
-      <div>
+      <Container>
         <h1 style={{textAlign:'center'}}>Conference Schedule</h1>
-        <pre>{JSON.stringify(this.state.conferences, null, 2)}</pre>
-      </div>
+        {/* <pre>{JSON.stringify(this.state.conferences, null, 2)}</pre> */}
+        <ConferenceCard conferences={conferences} />
+      </Container>
     );
   }
 }

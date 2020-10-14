@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Data from './data';
-import ConferenceCard from './ConferenceCard';
+import Data from './components/data';
+import ConferenceCard from './components/ConferenceCard';
 
 
 class App extends React.Component {

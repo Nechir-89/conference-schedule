@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Data from './data';
+import Data from './components/data';
 import ConferenceCard from './components/ConferenceCard';
 import Nav from './components/Nav';
 

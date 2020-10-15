@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Data from './components/data';
+import Data from './data';
 import ConferenceCard from './components/ConferenceCard';
+import Nav from './components/Nav';
 
 
 class App extends React.Component {
@@ -10,18 +11,31 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      conferences: Data
+      conferences: Data,
+      isDatepickerShown: false
     }
+
+    this.showDatepicker = this.showDatepicker.bind(this)
+  }
+
+  showDatepicker () {
+    this.setState({
+      isDatepickerShown: true
+    }, () => console.log(this.state.isDatepickerShown))
   }
 
   render() {
-    const { conferences } = this.state
+    const { conferences, isDatepickerShown } = this.state
 
     return (
-      <Container>
-        <h1 style={{textAlign:'center'}}>Conference Schedule</h1>
+      <Container className='bg-color'>
         {/* <pre>{JSON.stringify(this.state.conferences, null, 2)}</pre> */}
-        <ConferenceCard conferences={conferences} />
+        <Nav />
+        <ConferenceCard 
+          conferences={conferences}
+          onShowCalendar={this.showDatepicker}
+          isCalendarShown={isDatepickerShown}
+        />
       </Container>
     );
   }

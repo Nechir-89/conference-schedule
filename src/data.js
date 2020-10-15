@@ -251,40 +251,40 @@ export default [
           name: 'Alicia Lopez',
           post: 'The black cat',
           company: 'AT&T'
+        }
+      ]
+    },
+    {
+      id: 'CONF014',
+      name: 'React vs Angular',
+      date: 'Dec 10, 2020',
+      description: 'Lady Catherine continued her remarks on Elizabeth’s performance, mixing with them many instructions on execution and taste. ',
+      src: require('./images/image2.jpg'),
+      speakers: [
+        {
+          id: 'SP233',
+          name: 'Amanda White',
+          post: '',
+          company: 'Paypal'
         },
         {
-          id: 'CONF014',
-          name: 'React vs Angular',
-          date: 'Dec 10, 2020',
-          description: 'Lady Catherine continued her remarks on Elizabeth’s performance, mixing with them many instructions on execution and taste. ',
-          src: require('./images/image2.jpg'),
-          speakers: [
-            {
-              id: 'SP233',
-              name: 'Amanda White',
-              post: '',
-              company: 'Paypal'
-            },
-            {
-              id: 'SP544',
-              name: 'Lucas Ochoa',
-              post: 'A son at the front',
-              company: 'Adobe'
-            },
-            {
-              id: 'SP211',
-              name: 'David Baker',
-              post: 'The world crisis',
-              company: 'Microsoft' 
-            },
-            {
-              id: 'SP443',
-              name: 'Alicia Lopez',
-              post: 'The black cat',
-              company: 'AT&T'
-            }
+          id: 'SP544',
+          name: 'Lucas Ochoa',
+          post: 'A son at the front',
+          company: 'Adobe'
+        },
+        {
+          id: 'SP211',
+          name: 'David Baker',
+          post: 'The world crisis',
+          company: 'Microsoft' 
+        },
+        {
+          id: 'SP443',
+          name: 'Alicia Lopez',
+          post: 'The black cat',
+          company: 'AT&T'
+        }
           ]
-        } 
-      ]
-    }
+      } 
   ]

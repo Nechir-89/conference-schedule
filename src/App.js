@@ -11,18 +11,31 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      conferences: Data
+      conferences: Data,
+      isDatepickerShown: false
     }
+
+    this.showDatepicker = this.showDatepicker.bind(this)
+  }
+
+  showDatepicker () {
+    this.setState({
+      isDatepickerShown: true
+    }, () => console.log(this.state.isDatepickerShown))
   }
 
   render() {
-    const { conferences } = this.state
+    const { conferences, isDatepickerShown } = this.state
 
     return (
       <Container className='bg-color'>
         {/* <pre>{JSON.stringify(this.state.conferences, null, 2)}</pre> */}
         <Nav />
-        <ConferenceCard conferences={conferences} />
+        <ConferenceCard 
+          conferences={conferences}
+          onShowCalendar={this.showDatepicker}
+          isCalendarShown={isDatepickerShown}
+        />
       </Container>
     );
   }

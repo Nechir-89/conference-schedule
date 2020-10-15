@@ -3,7 +3,7 @@ import { Row, Col, Card } from 'react-bootstrap';
 import { FaCalendarAlt } from 'react-icons/fa'
 import { MdLocationOn } from 'react-icons/md'
 
-export default function ConferenceCard({ conferences }) {
+export default function ConferenceCard({ conferences, onShowCalendar, isCalendarShown }) {
 
   return (
     <Row>
@@ -12,8 +12,12 @@ export default function ConferenceCard({ conferences }) {
         <div className='form-position'>
           <form>
             <input type='text' placeholder='search' className='search-bar' />
-              <input type='date' />
-              <FaCalendarAlt color='000' size={18} />
+            <button onClick={onShowCalendar} className='btn-calendar'>
+              <FaCalendarAlt color='000' size={22} />
+            </button>
+            { isCalendarShown &&
+                <input type='date' />
+            }
           </form>
         </div>
         <div className='card-ml'>
@@ -29,17 +33,13 @@ export default function ConferenceCard({ conferences }) {
                         <Card.Img src={src} className='card-image' />
                       </a>
                       <Card.Body>
-                        <Card.Title class='card-title'>{name}</Card.Title>
-                        <Card.Text class='card-text'>
-                          <ul>
-                            <li>
-                              <FaCalendarAlt color='#737373' size={15} className='icon-mr' /> {date}
-                            </li>
-                            <li>
-                              <MdLocationOn color='#737373' size={15} className='icon-mr' /> Virtual
-                            </li>
-                          </ul>
+                        <Card.Title className='card-title'>{name}</Card.Title>
+                        <Card.Text className='card-text'>
+                          <FaCalendarAlt color='#737373' size={15} className='icon-mr' /> {date}
                         </Card.Text>
+                        <Card.Text>
+                          <MdLocationOn color='#737373' size={15} className='icon-mr' /> Virtual
+                        </Card.Text>                        
                       </Card.Body>
                     </Card>
                   )

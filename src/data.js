@@ -1,10 +1,12 @@
 export default [
     { 
       id: 'CONF001',
-      name: 'UI/UX design for web developers',
-      date: 'Oct 20, 2020', 
+      name: 'UI/UX Design for Web Developers',
+      date: 'Oct 20, 2020',
+      time: '09:00 AM', 
       description: 'He seemed astonished too on finding her alone, and apologised for his intrusion by letting her know that he had understood all the ladies were to be within.',
-      src: '/images/image1.jpg',
+      src: '/images/300x200/image1.jpg',
+      src2: '/images/458x623/image1.jpg',
       speakers: [
         {
           id: 'SP101',
@@ -34,10 +36,11 @@ export default [
     },
     { 
       id: 'CONF011',
-      name: 'UI/UX design for web developers',
+      name: 'UI/UX Design for Web Developers',
       date: 'Oct 25, 2020', 
+      time: '09:00 AM',
       description: 'He seemed astonished too on finding her alone, and apologised for his intrusion by letting her know that he had understood all the ladies were to be within.',
-      src: '/images/image2.jpg',
+      src: '/images/300x200/image2.jpg',
       speakers: [
         {
           id: 'SP101',
@@ -69,8 +72,9 @@ export default [
       id: 'CONF002',
       name: 'Mastering Javascript',
       date: 'Oct 14, 2020',
+      time: '09:00 AM',
       description: 'Elizabeth made no answer. She was afraid of talking longer of his friend; and, having nothing else to say, was now determined to leave the trouble of finding a subject to him.',
-      src: '/images/image3.jpg',
+      src: '/images/300x200/image3.jpg',
       speakers: [
         {
           id: 'SP632',
@@ -96,8 +100,9 @@ export default [
       id: 'CONF012',
       name: 'Mastering Javascript',
       date: 'Nov 07, 2020',
+      time: '09:00 AM',
       description: 'Elizabeth made no answer. She was afraid of talking longer of his friend; and, having nothing else to say, was now determined to leave the trouble of finding a subject to him.',
-      src: '/images/image4.jpg',
+      src: '/images/300x200/image4.jpg',
       speakers: [
         {
           id: 'SP632',
@@ -123,8 +128,9 @@ export default [
       id: 'CONF003',
       name: 'How to start freelancing',
       date: 'Nov 10, 2020',
+      time: '09:00 AM',
       description: 'He took the hint, and soon began with, “This seems a very comfortable house. Lady Catherine, I believe, did a great deal to it when Mr. Collins first came to Hunsford.”',
-      src: '/images/image5.jpg',
+      src: '/images/300x200/image5.jpg',
       speakers: [
         {
           id: 'SP233',
@@ -174,8 +180,9 @@ export default [
       id: 'CONF013',
       name: 'How to start freelancing',
       date: 'Nov 21, 2020',
+      time: '09:00 AM',
       description: 'He took the hint, and soon began with, “This seems a very comfortable house. Lady Catherine, I believe, did a great deal to it when Mr. Collins first came to Hunsford.”',
-      src: '/images/image6.jpg',
+      src: '/images/300x200/image6.jpg',
       speakers: [
         {
           id: 'SP233',
@@ -225,8 +232,9 @@ export default [
       id: 'CONF004',
       name: 'React vs Angular',
       date: 'Nov 08, 2020',
+      time: '09:00 AM',
       description: 'Lady Catherine continued her remarks on Elizabeth’s performance, mixing with them many instructions on execution and taste. ',
-      src: '/images/image1.jpg',
+      src: '/images/300x200/image7.jpg',
       speakers: [
         {
           id: 'SP233',
@@ -258,8 +266,9 @@ export default [
       id: 'CONF014',
       name: 'React vs Angular',
       date: 'Dec 10, 2020',
+      time: '09:00 AM',
       description: 'Lady Catherine continued her remarks on Elizabeth’s performance, mixing with them many instructions on execution and taste. ',
-      src: '/images/image2.jpg',
+      src: '/images/300x200/image8.jpg',
       speakers: [
         {
           id: 'SP233',

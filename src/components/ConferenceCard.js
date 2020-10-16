@@ -8,7 +8,13 @@ export default function ConferenceCard({ conferences, onShowCalendar, isCalendar
   return (
     <Row>
       <Col>
+        {/* cover */}
         <img src={'/images/cover.jpg'} className='cover-img' alt='coverImage'/>
+        <header>
+          <h1>Web Conferences</h1>
+          <p>Find web conferences from all over the world in one place. and attend them in one platform.</p>
+        </header>
+        {/* search */}
         <div className='form-position'>
           <form>
             <input type='text' placeholder='search' className='search-bar' />
@@ -20,22 +26,27 @@ export default function ConferenceCard({ conferences, onShowCalendar, isCalendar
             }
           </form>
         </div>
+        {/* conference cards */}
         <div className='card-ml'>
           <ul className='grid space-around'>
             {
               conferences.map(
                 (conference) => {
-                  const { id, name, date, src } = conference
+                  const { id, name, date, time,src } = conference
 
                   return (
                     <Card key={id} className='conference-card'>
-                      <a href='/'>
+                      <a href='/' className='conferenceLink'>
                         <Card.Img src={src} className='card-image' />
+                        <div className='countdown'>
+                          <span className='timer'>00:00:06:24</span>
+                          <span className='timeLabels'>Day Hrs Mins Sec</span>
+                        </div>
                       </a>
-                      <Card.Body>
+                      <Card.Body className='card-body'>
                         <Card.Title className='card-title'>{name}</Card.Title>
                         <Card.Text className='card-text'>
-                          <FaCalendarAlt color='#737373' size={15} className='icon-mr' /> {date}
+                          <FaCalendarAlt color='#737373' size={15} className='icon-mr' /> {date} - {time}
                         </Card.Text>
                         <Card.Text>
                           <MdLocationOn color='#737373' size={15} className='icon-mr' /> Virtual

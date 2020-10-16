@@ -4,9 +4,9 @@ import React from 'react'
 import { FaInstagram, FaTwitter, FaFacebookF, FaUser } from 'react-icons/fa'
 import { IoMdGlobe } from 'react-icons/io'
 
-const activeStyle = {
-    color: 'rgb(187, 46, 31)'
-}
+// const activeStyle = {
+//     color: 'rgb(187, 46, 31)'
+// }
 
 export default function Nav () {
   return (
@@ -24,7 +24,7 @@ export default function Nav () {
           <a href='/' className='nav-link'>About</a>
         </li>
         <li>
-          <a href='/' className='nav-link'>EXPLORE</a>
+          <a href='/' className='nav-link'>Conferences</a>
         </li>
         <li>
           <a href='/' className='nav-link'>BLOG</a>

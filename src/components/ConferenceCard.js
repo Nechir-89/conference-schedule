@@ -8,7 +8,7 @@ export default function ConferenceCard({ conferences, onShowCalendar, isCalendar
   return (
     <Row>
       <Col>
-        <img src={require('../images/cover.jpg')} className='cover-img' />
+        <img src={'/images/cover.jpg'} className='cover-img' alt='coverImage'/>
         <div className='form-position'>
           <form>
             <input type='text' placeholder='search' className='search-bar' />

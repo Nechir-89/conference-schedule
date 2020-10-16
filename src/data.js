@@ -4,7 +4,7 @@ export default [
       name: 'UI/UX design for web developers',
       date: 'Oct 20, 2020', 
       description: 'He seemed astonished too on finding her alone, and apologised for his intrusion by letting her know that he had understood all the ladies were to be within.',
-      src: require('./images/image1.jpg'),
+      src: '/images/image1.jpg',
       speakers: [
         {
           id: 'SP101',
@@ -37,7 +37,7 @@ export default [
       name: 'UI/UX design for web developers',
       date: 'Oct 25, 2020', 
       description: 'He seemed astonished too on finding her alone, and apologised for his intrusion by letting her know that he had understood all the ladies were to be within.',
-      src: require('./images/image2.jpg'),
+      src: '/images/image2.jpg',
       speakers: [
         {
           id: 'SP101',
@@ -70,7 +70,7 @@ export default [
       name: 'Mastering Javascript',
       date: 'Oct 14, 2020',
       description: 'Elizabeth made no answer. She was afraid of talking longer of his friend; and, having nothing else to say, was now determined to leave the trouble of finding a subject to him.',
-      src: require('./images/image3.jpg'),
+      src: '/images/image3.jpg',
       speakers: [
         {
           id: 'SP632',
@@ -97,7 +97,7 @@ export default [
       name: 'Mastering Javascript',
       date: 'Nov 07, 2020',
       description: 'Elizabeth made no answer. She was afraid of talking longer of his friend; and, having nothing else to say, was now determined to leave the trouble of finding a subject to him.',
-      src: require('./images/image4.jpg'),
+      src: '/images/image4.jpg',
       speakers: [
         {
           id: 'SP632',
@@ -124,7 +124,7 @@ export default [
       name: 'How to start freelancing',
       date: 'Nov 10, 2020',
       description: 'He took the hint, and soon began with, “This seems a very comfortable house. Lady Catherine, I believe, did a great deal to it when Mr. Collins first came to Hunsford.”',
-      src: require('./images/image5.jpg'),
+      src: '/images/image5.jpg',
       speakers: [
         {
           id: 'SP233',
@@ -175,7 +175,7 @@ export default [
       name: 'How to start freelancing',
       date: 'Nov 21, 2020',
       description: 'He took the hint, and soon began with, “This seems a very comfortable house. Lady Catherine, I believe, did a great deal to it when Mr. Collins first came to Hunsford.”',
-      src: require('./images/image6.jpg'),
+      src: '/images/image6.jpg',
       speakers: [
         {
           id: 'SP233',
@@ -226,7 +226,7 @@ export default [
       name: 'React vs Angular',
       date: 'Nov 08, 2020',
       description: 'Lady Catherine continued her remarks on Elizabeth’s performance, mixing with them many instructions on execution and taste. ',
-      src: require('./images/image1.jpg'),
+      src: '/images/image1.jpg',
       speakers: [
         {
           id: 'SP233',
@@ -259,7 +259,7 @@ export default [
       name: 'React vs Angular',
       date: 'Dec 10, 2020',
       description: 'Lady Catherine continued her remarks on Elizabeth’s performance, mixing with them many instructions on execution and taste. ',
-      src: require('./images/image2.jpg'),
+      src: '/images/image2.jpg',
       speakers: [
         {
           id: 'SP233',

@@ -11,26 +11,29 @@ const activeStyle = {
 export default function Nav () {
   return (
     <nav className='row space-between nav-bg'>
+      {/* pages navigation */}
       <ul className='row nav'>
+        {/* logo */}
         <li>
-          <img src={require('../images/logo.svg')} />
+          <img src={'/images/logo.svg'} alt='logo'/>
         </li>
         <li>
-          <a href='#' className='nav-link'>Home</a>
+          <a href='/' className='nav-link'>Home</a>
         </li>
         <li>
-          <a href='#' className='nav-link'>About</a>
+          <a href='/' className='nav-link'>About</a>
         </li>
         <li>
-          <a href='#' className='nav-link'>EXPLORE</a>
+          <a href='/' className='nav-link'>EXPLORE</a>
         </li>
         <li>
-          <a href='#' className='nav-link'>BLOG</a>
+          <a href='/' className='nav-link'>BLOG</a>
         </li>
         <li>
-          <a href='#' className='nav-link'>CONTACT</a>
+          <a href='/' className='nav-link'>CONTACT</a>
         </li>
       </ul>
+      {/* social icons */}
       <ul className='row nav right'>
         <li>
           <FaInstagram color='#fff' size={20} />

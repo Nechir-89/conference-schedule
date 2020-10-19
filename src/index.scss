@@ -3,35 +3,26 @@
 *::after {
   margin: 0px;
   padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
 body {
   background-color: #efefef;
 }
-
-/* Main page */
+/* Main page */ 
 .bg-color {
   background-color: #f2f2f2;
 }
-
 .cover-img {
   width: 100%;
 }
-
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .space-around {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .conference-card {
@@ -40,26 +31,16 @@ body {
   /* width: 12rem;
   height: 14rem; */
   border-radius: 5px;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.25);
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-box-shadow ease-in-out 100ms, -webkit-transform ease-in-out 100ms;
-  transition: -webkit-box-shadow ease-in-out 100ms, -webkit-transform ease-in-out 100ms;
-  transition: box-shadow ease-in-out 100ms, transform ease-in-out 100ms;
-  transition: box-shadow ease-in-out 100ms, transform ease-in-out 100ms, -webkit-box-shadow ease-in-out 100ms, -webkit-transform ease-in-out 100ms;
-}
 
-.conference-card:hover {
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-  -webkit-transition: -webkit-box-shadow ease-in-out 100ms, -webkit-transform ease-in-out 100ms;
-  transition: -webkit-box-shadow ease-in-out 100ms, -webkit-transform ease-in-out 100ms;
+  background: #fff;
+  box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.25);
+  transform: scale(1);
   transition: box-shadow ease-in-out 100ms, transform ease-in-out 100ms;
-  transition: box-shadow ease-in-out 100ms, transform ease-in-out 100ms, -webkit-box-shadow ease-in-out 100ms, -webkit-transform ease-in-out 100ms;
+}
+.conference-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  transition: box-shadow ease-in-out 100ms, transform ease-in-out 100ms;
 }
 
 .card-image {
@@ -74,7 +55,6 @@ li {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-
 .center-text {
   text-align: center;
 }
@@ -92,8 +72,6 @@ li {
 .card-text {
   font-size: 13px;
   color: #222222;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0.2rem;
   text-transform: uppercase;
@@ -130,18 +108,6 @@ li {
   padding-bottom: 2rem;
 }
 
-::-webkit-input-placeholder {
-  padding-left: 1rem;
-}
-
-:-ms-input-placeholder {
-  padding-left: 1rem;
-}
-
-::-ms-input-placeholder {
-  padding-left: 1rem;
-}
-
 ::placeholder {
   padding-left: 1rem;
 }
@@ -152,39 +118,31 @@ li {
 }
 
 /* Nav */
-div.top-navigation {
+div.top-navigation{
   border-bottom: 1px solid #CCF28E;
 }
-
-div.top-navigation nav {
+div.top-navigation  nav{
   max-width: 1366px;
   margin: 0px auto;
 }
-
 .space-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 nav.row,
 ul.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .nav-link {
   font-size: 0.9rem;
   text-decoration: none;
   color: whitesmoke;
-}
-
-.nav-link:hover {
-  color: #CCF28E;
+  &:hover{
+    // font-weight: bold;
+    color: #CCF28E;
+  }
 }
 
 .nav li {
@@ -192,8 +150,7 @@ ul.row {
   margin-left: 15px;
   color: whitesmoke;
 }
-
-nav ul.right li:hover {
+nav ul.right li:hover{
   color: #CCF28E;
 }
 
@@ -209,7 +166,6 @@ ul.nav {
 .conferenceLink {
   text-decoration: none;
 }
-
 div.countdown {
   background-color: rgba(19, 7, 24, 0.8);
   width: 100%;
@@ -218,50 +174,41 @@ div.countdown {
   text-align: center;
   margin-top: -45px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 div.countdown span {
   color: white;
   font-weight: bold;
 }
-
 div.countdown span.timer {
   font-size: 14px;
   letter-spacing: 1px;
 }
-
 div.countdown span.timeLabels {
   font-size: 10px;
   word-spacing: 2px;
 }
 
+// header
+// problem: it is hardcoded and does not work with small screens
 header {
   position: absolute;
   margin-left: 8rem;
   top: 8rem;
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    color: #a9d562;
+  }
+  p {
+    width: 400px;
+    color: rgba(169, 213, 98, 0.8);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    word-spacing: 2px;
+  }
 }
-
-header h1 {
-  margin-bottom: 1rem;
-  font-size: 3.5rem;
-  color: #a9d562;
-}
-
-header p {
-  width: 400px;
-  color: rgba(169, 213, 98, 0.8);
-  font-size: 1.2rem;
-  line-height: 1.5;
-  word-spacing: 2px;
-}
-/*# sourceMappingURL=index.css.map */

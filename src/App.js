@@ -1,24 +1,33 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import Data from './data';
 import ConferenceCard from './components/ConferenceCard';
 import Nav from './components/Nav';
+import ConferenceDetails from './components/ConferenceDetails';
 
+// react router dom
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
       conferences: Data,
-      isDatepickerShown: false
+      isDatepickerShown: false,
+      selectedConfId: undefined,
+      confName: '',
+      confDesc: '',
+      confSpeakers: [],
+      imageSrc: ''
     }
-
     this.showDatepicker = this.showDatepicker.bind(this)
   }
 
-  showDatepicker () {
+  showDatepicker() {
     this.setState({
       isDatepickerShown: true
     }, () => console.log(this.state.isDatepickerShown))
@@ -28,15 +37,37 @@ class App extends React.Component {
     const { conferences, isDatepickerShown } = this.state
 
     return (
-      <Container className='bg-color'>
-        {/* <pre>{JSON.stringify(this.state.conferences, null, 2)}</pre> */}
+      <Router>
         <Nav />
-        <ConferenceCard 
-          conferences={conferences}
-          onShowCalendar={this.showDatepicker}
-          isCalendarShown={isDatepickerShown}
-        />
-      </Container>
+        <Switch>
+          <Route exact path="/">
+            <ConferenceCard
+              conferences={conferences}
+              onShowCalendar={this.showDatepicker}
+              isCalendarShown={isDatepickerShown}
+              setData={(id, name, description, speakers, src2) =>
+                id !== this.state.selectedConfId ?
+                  this.setState({
+                    selectedConfId: id,
+                    confName: name,
+                    confDesc: description,
+                    confSpeakers: speakers,
+                    imageSrc: src2
+                  }) : ''
+              }
+            />
+          </Route>
+          <Route path="/ConferenceDetails/">
+            <ConferenceDetails
+              id={this.state.selectedConfId}
+              name={this.state.confName}
+              description={this.state.confDesc}
+              speakers={this.state.confSpeakers}
+              imageSrc={this.state.imageSrc}
+            />
+          </Route>
+        </Switch>
+      </Router>
     );
   }
 }

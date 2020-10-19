@@ -152,50 +152,61 @@ li {
 }
 
 /* Nav */
+div.top-navigation {
+  border-bottom: 1px solid #CCF28E;
+}
+
+div.top-navigation nav {
+  max-width: 1366px;
+  margin: 0px auto;
+}
+
 .space-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.row {
+nav.row,
+ul.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-link {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 0.9rem;
   text-decoration: none;
-  color: inherit;
+  color: whitesmoke;
+}
+
+.nav-link:hover {
+  color: #CCF28E;
 }
 
 .nav li {
   margin-right: 15px;
   margin-left: 15px;
-  color: #fff;
+  color: whitesmoke;
 }
 
-.nav {
-  padding: 5px 30px;
+nav ul.right li:hover {
+  color: #CCF28E;
+}
+
+ul.nav {
+  padding: 1.1rem 1rem 0.7rem;
 }
 
 .nav-bg {
   background-color: #29576f;
 }
 
-.right {
-  position: absolute;
-  right: 0;
-}
-
 /* countdown for conferences */
-a.conferenceLink {
+.conferenceLink {
   text-decoration: none;
 }
 

@@ -9,7 +9,7 @@
 body {
   background-color: #efefef;
 }
-/* Main page */
+/* Main page */ 
 .bg-color {
   background-color: #f2f2f2;
 }
@@ -118,42 +118,52 @@ li {
 }
 
 /* Nav */
+div.top-navigation{
+  border-bottom: 1px solid #CCF28E;
+}
+div.top-navigation  nav{
+  max-width: 1366px;
+  margin: 0px auto;
+}
 .space-between {
   justify-content: space-between;
 }
 
-.row {
+nav.row,
+ul.row {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .nav-link {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 0.9rem;
   text-decoration: none;
-  color: inherit;
+  color: whitesmoke;
+  &:hover{
+    // font-weight: bold;
+    color: #CCF28E;
+  }
 }
 
 .nav li {
   margin-right: 15px;
   margin-left: 15px;
-  color: #fff;
+  color: whitesmoke;
+}
+nav ul.right li:hover{
+  color: #CCF28E;
 }
 
-.nav {
-  padding: 5px 30px;
+ul.nav {
+  padding: 1.1rem 1rem 0.7rem;
 }
 
 .nav-bg {
   background-color: #29576f;
 }
 
-.right {
-  position: absolute;
-  right: 0;
-}
 /* countdown for conferences */
-a.conferenceLink {
+.conferenceLink {
   text-decoration: none;
 }
 div.countdown {

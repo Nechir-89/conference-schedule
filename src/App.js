@@ -33,8 +33,10 @@ class App extends React.Component {
     }, () => console.log(this.state.isDatepickerShown))
   }
 
+  //onShowCalendar={this.showDatepicker}
+  //isCalendarShown={isDatepickerShown}
   render() {
-    const { conferences, isDatepickerShown } = this.state
+    const { conferences } = this.state
 
     return (
       <Router>
@@ -43,8 +45,6 @@ class App extends React.Component {
           <Route exact path="/">
             <ConferenceCard
               conferences={conferences}
-              onShowCalendar={this.showDatepicker}
-              isCalendarShown={isDatepickerShown}
               setData={(id, name, description, speakers, src2) =>
                 id !== this.state.selectedConfId ?
                   this.setState({

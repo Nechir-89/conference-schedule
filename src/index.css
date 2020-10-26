@@ -265,3 +265,47 @@ header p {
   word-spacing: 2px;
 }
 /*# sourceMappingURL=index.css.map */
+
+/*RegisterForm*/
+.top-buttons {
+  margin: 3em;
+}
+
+.back {
+  background-color: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #808080;
+  margin-left: 1em;
+}
+
+.agenda {
+  background-color: #79a236;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  margin-right: 5em;
+}
+
+.first_name, .last_name, .email, .password, .country, .job_title {
+  font-size: 1.2 rem;
+  color: #808080;
+  display: block;
+}
+
+.form-elements {
+  width: 100%;
+}
+
+.form-item {
+  width: 50%;
+  display: inline-block;
+}
+
+.register-form {
+  margin: 4em;
+}

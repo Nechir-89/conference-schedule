@@ -212,3 +212,19 @@ header {
     word-spacing: 2px;
   }
 }
+
+// RegisterForm component
+
+div.right-side {
+  
+  button.back {
+    background-color: none;
+    border: none;
+    font-size: 2rem;
+  }
+
+  button.agenda {
+    border: none;
+    font-size: 2rem;
+  }
+}

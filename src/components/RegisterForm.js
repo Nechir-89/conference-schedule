@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoIosArrowBack } from 'react-icons/io'
 
 import '../conferenceDetails.css'
 
@@ -13,30 +14,53 @@ class RegisterForm extends React.Component {
     render() {
       return (
         <div className='conference-details'> 
+
           <div className='left-side'>
           <figure className='conf-image'>
             <img src={this.props.imageSrc} alt='' />
             </figure>
             <h2 className='figure-caption'>{this.props.name}</h2>
           </div>
+
           <div className='right-side'>
-            <button>></button>
-            <button>Agenda</button>
-            <form> 
-              <label for='first_name'>First Name *</label>
-              <input type='text' name='first_name' />
-              <label for='last_name'>Last Name *</label>
-              <input type='text' name='last_name' />
-              <label for='email'>Email *</label>
-              <input type='text' name='email' />
-              <label for='password'>Password</label>
-              <input type='text' name='password' />
-              <label for='country'>Country</label>
-              <input type='text' name='country' />
-              <label for='job_title'>Job Title</label>
-              <input type='text' name='job_title' />
-              <input type='checkbox' name='conditional_term' />
-              <label for='conditional_term'>Agree on conditional terms of use and privacy policies</label>
+            <div className='top-buttons'>
+              <button className='back'>
+                <IoIosArrowBack color='#000' size={30} />Back
+              </button>
+              <button className='agenda'>Agenda</button>
+            </div>
+            <form className='register-form'> 
+              <ul className='form-elements'>
+                <li className='form-item'>
+                  <div className='first_name'>First Name *</div>
+                  <input type='text' name='first_name' />
+                </li>
+                <li className='form-item'>
+                  <div className='last_name'>Last Name *</div>
+                  <input type='text' name='last_name' />
+                </li>
+                <li className='form-item'>
+                  <label className='email'>Email *</label>
+                  <input type='text' name='email' />
+                </li>
+                <li className='form-item'>
+                  <label className='password'>Password</label>
+                  <input type='text' name='password' />
+                </li>
+                <li className='form-item'>
+                  <label className='country'>Country</label>
+                  <input type='text' name='country' />
+                </li>
+                <li className='form-item'>
+                  <label className='job_title'>Job Title</label>
+                  <input type='text' name='job_title' />
+                </li>
+              </ul>
+
+              <div className='conditional_term'>
+                <input type='checkbox' name='conditional_term' />
+                <label>Agree on conditional terms of use and privacy policies</label>
+              </div>
               <button className='register'>Register</button>
             </form>
           </div>

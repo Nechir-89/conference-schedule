@@ -43,3 +43,8 @@ notice: using SCSS may be unkown for Ana
 # October 18 and 19, 2020
 * using react-router-dom to switch between components (the main page and conferenceDetails)
 * using onClick event to return back data to app.js and then switch to component (conferenceDetails)
+
+
+# October 26, 2020
+* building the RegisterForm component
+* styling the RegisterForm

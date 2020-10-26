@@ -33,32 +33,32 @@ class RegisterForm extends React.Component {
               <ul className='form-elements'>
                 <li className='form-item'>
                   <div className='first_name'>First Name *</div>
-                  <input type='text' name='first_name' />
+                  <input type='text' name='first_name' className='form-input-text' />
                 </li>
                 <li className='form-item'>
                   <div className='last_name'>Last Name *</div>
-                  <input type='text' name='last_name' />
+                  <input type='text' name='last_name' className='form-input-text' />
                 </li>
                 <li className='form-item'>
                   <label className='email'>Email *</label>
-                  <input type='text' name='email' />
+                  <input type='text' name='email' className='form-input-text' />
                 </li>
                 <li className='form-item'>
                   <label className='password'>Password</label>
-                  <input type='text' name='password' />
+                  <input type='text' name='password' className='form-input-text' />
                 </li>
                 <li className='form-item'>
                   <label className='country'>Country</label>
-                  <input type='text' name='country' />
+                  <input type='text' name='country' className='form-input-text' />
                 </li>
                 <li className='form-item'>
                   <label className='job_title'>Job Title</label>
-                  <input type='text' name='job_title' />
+                  <input type='text' name='job_title' className='form-input-text' />
                 </li>
               </ul>
 
               <div className='conditional_term'>
-                <input type='checkbox' name='conditional_term' />
+                <input type='checkbox' name='conditional_term' checked />
                 <label>Agree on conditional terms of use and privacy policies</label>
               </div>
               <button className='register'>Register</button>

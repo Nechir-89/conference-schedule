@@ -1,5 +1,6 @@
 import React from 'react'
-import ContactForm from './ContactForm'
+import RegisterForm from './RegisterForm'
+import LinkButton from './LinkButton'
 // react router dom
 import {
     BrowserRouter as Router,
@@ -50,8 +51,8 @@ class ConferenceDetails extends React.Component {
 
                     </div>
                     <div className='call-to-action'>
-                        <button className='register-btn'>Register Now</button>
-                        <button className='agenda-btn'>Agenda</button>
+                        <LinkButton className='register-btn' to='RegisterForm'>Register Now</LinkButton>
+                        <LinkButton className='agenda-btn'>Agenda</LinkButton>
                     </div>
                 </div>
 

@@ -12,7 +12,7 @@ class RegisterForm extends React.Component {
 
     render() {
       return (
-        <div className='contact-form'> 
+        <div className='conference-details'> 
           <div className='left-side'>
           <figure className='conf-image'>
             <img src={this.props.imageSrc} alt='' />
@@ -44,3 +44,5 @@ class RegisterForm extends React.Component {
       )
     }
   }
+
+  export default RegisterForm

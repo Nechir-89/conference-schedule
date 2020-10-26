@@ -3,6 +3,7 @@ import Data from './data';
 import ConferenceCard from './components/ConferenceCard';
 import Nav from './components/Nav';
 import ConferenceDetails from './components/ConferenceDetails';
+import RegisterForm from './components/RegisterForm'
 
 // react router dom
 import {
@@ -63,6 +64,13 @@ class App extends React.Component {
               name={this.state.confName}
               description={this.state.confDesc}
               speakers={this.state.confSpeakers}
+              imageSrc={this.state.imageSrc}
+            />
+          </Route>
+          <Route path="/RegisterForm/">
+            <RegisterForm 
+              id={this.state.selectedConfId}
+              name={this.state.confName}
               imageSrc={this.state.imageSrc}
             />
           </Route>

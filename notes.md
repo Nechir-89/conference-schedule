@@ -47,4 +47,10 @@ notice: using SCSS may be unkown for Ana
 
 # October 26, 2020
 * building the RegisterForm component
+* clicking the Register Now button opens up the Register form
 * styling the RegisterForm
+
+
+# October 27, 2020
+* styling the RegisterForm
+* adding location as an object property in the data file

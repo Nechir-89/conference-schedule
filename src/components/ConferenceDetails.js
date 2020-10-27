@@ -51,7 +51,7 @@ class ConferenceDetails extends React.Component {
 
                     </div>
                     <div className='call-to-action'>
-                        <LinkButton className='register-btn' to='RegisterForm'>Register Now</LinkButton>
+                        <LinkButton className='register-btn' to='/RegisterForm/'>Register Now</LinkButton>
                         <LinkButton className='agenda-btn'>Agenda</LinkButton>
                     </div>
                 </div>

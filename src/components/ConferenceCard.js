@@ -33,7 +33,7 @@ export default function ConferenceCard({ conferences, onShowCalendar, isCalendar
           <ul className='grid space-around'>
             {
               conferences.map((conference) => {
-                const { id, name, date, time, src, description, speakers, src2 } = conference;
+                const { id, name, date, time, src, description, speakers, src2, location } = conference;
                 return (
                   <Card key={id} className='conference-card'>
                     {/* https://reactrouter.com/web/api/Link */}
@@ -54,7 +54,7 @@ export default function ConferenceCard({ conferences, onShowCalendar, isCalendar
                         <FaCalendarAlt color='#737373' size={15} className='icon-mr' /> {date} - {time}
                       </Card.Text>
                       <Card.Text>
-                        <MdLocationOn color='#737373' size={15} className='icon-mr' /> Virtual
+                        <MdLocationOn color='#737373' size={15} className='icon-mr' /> {location}
                           </Card.Text>
                     </Card.Body>
                   </Card>

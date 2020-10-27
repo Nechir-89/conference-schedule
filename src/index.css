@@ -268,7 +268,7 @@ header p {
 
 /*RegisterForm*/
 .top-buttons {
-  margin: 1em 3em 3em 3em;
+  margin: 1em 3em 3em 2em;
 }
 
 .back {
@@ -288,7 +288,7 @@ header p {
   color: #fff;
   position: absolute;
   /*right: 0;*/
-  margin-left: 20em;
+  margin-left: 23em;
 }
 
 .first_name, .last_name, .email, .password, .country, .job_title {

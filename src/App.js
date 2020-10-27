@@ -46,7 +46,7 @@ class App extends React.Component {
           <Route exact path="/">
             <ConferenceCard
               conferences={conferences}
-              setData={(id, name, description, speakers, src2) =>
+              setData={(id, name, description, speakers, src2, location) =>
                 id !== this.state.selectedConfId ?
                   this.setState({
                     selectedConfId: id,

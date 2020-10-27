@@ -7,6 +7,7 @@ export default [
     description: 'He seemed astonished too on finding her alone, and apologised for his intrusion by letting her know that he had understood all the ladies were to be within.',
     src: '/images/300x200/image1.jpg',
     src2: '/images/450x530/image1.jpg',
+    location: 'Virtual',
     speakers: [
       {
         id: 'SP101',
@@ -46,6 +47,7 @@ export default [
     description: 'He seemed astonished too on finding her alone, and apologised for his intrusion by letting her know that he had understood all the ladies were to be within.',
     src: '/images/300x200/image2.jpg',
     src2: '/images/450x530/image2.jpg',
+    location: 'Virtual',
     speakers: [
       {
         id: 'SP101',
@@ -85,6 +87,7 @@ export default [
     description: 'Elizabeth made no answer. She was afraid of talking longer of his friend; and, having nothing else to say, was now determined to leave the trouble of finding a subject to him.',
     src: '/images/300x200/image3.jpg',
     src2: '/images/450x530/image3.jpg',
+    location: 'Virtual',
     speakers: [
       {
         id: 'SP632',
@@ -117,6 +120,7 @@ export default [
     description: 'Elizabeth made no answer. She was afraid of talking longer of his friend; and, having nothing else to say, was now determined to leave the trouble of finding a subject to him.',
     src: '/images/300x200/image4.jpg',
     src2: '/images/450x530/image4.jpg',
+    location: 'Virtual',
     speakers: [
       {
         id: 'SP632',
@@ -149,6 +153,7 @@ export default [
     description: 'He took the hint, and soon began with, “This seems a very comfortable house. Lady Catherine, I believe, did a great deal to it when Mr. Collins first came to Hunsford.”',
     src: '/images/300x200/image5.jpg',
     src2: '/images/450x530/image5.jpg',
+    location: 'Virtual',
     speakers: [
       {
         id: 'SP233',
@@ -209,6 +214,7 @@ export default [
     description: 'He took the hint, and soon began with, “This seems a very comfortable house. Lady Catherine, I believe, did a great deal to it when Mr. Collins first came to Hunsford.”',
     src: '/images/300x200/image6.jpg',
     src2: '/images/450x530/image6.jpg',
+    location: 'Virtual',
     speakers: [
       {
         id: 'SP233',
@@ -269,6 +275,7 @@ export default [
     description: 'Lady Catherine continued her remarks on Elizabeth’s performance, mixing with them many instructions on execution and taste. ',
     src: '/images/300x200/image7.jpg',
     src2: '/images/450x530/image7.jpg',
+    location: 'Virtual',
     speakers: [
       {
         id: 'SP233',
@@ -308,6 +315,7 @@ export default [
     description: 'Lady Catherine continued her remarks on Elizabeth’s performance, mixing with them many instructions on execution and taste. ',
     src: '/images/300x200/image8.jpg',
     src2: '/images/450x530/image8.jpg',
+    location: 'Virtual',
     speakers: [
       {
         id: 'SP233',

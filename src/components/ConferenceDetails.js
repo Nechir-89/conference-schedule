@@ -1,14 +1,6 @@
 import React from 'react'
-import RegisterForm from './RegisterForm'
 import LinkButton from './LinkButton'
-// react router dom
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-  } from "react-router-dom";
 
-import '../conferenceDetails.css'
 
 
 class ConferenceDetails extends React.Component {

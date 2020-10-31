@@ -264,86 +264,15 @@ header p {
   line-height: 1.5;
   word-spacing: 2px;
 }
-/*# sourceMappingURL=index.css.map */
 
-/*RegisterForm*/
-.top-buttons {
-  margin: 1em 3em 3em 2em;
-}
-
-.back {
+div.right-side button.back {
   background-color: none;
   border: none;
-  font-size: 1.2rem;
-  color: #808080;
-  margin-left: 1em;
+  font-size: 2rem;
 }
 
-.agenda {
-  background-color: #79a236;
-  padding: 6px 10px;
+div.right-side button.agenda {
   border: none;
-  border-radius: 25px;
-  font-size: 1.2rem;
-  color: #fff;
-  position: absolute;
-  /*right: 0;*/
-  margin-left: 23em;
+  font-size: 2rem;
 }
-
-.first_name, .last_name, .email, .password, .country, .job_title {
-  font-size: 1.2rem;
-  color: #808080;
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.register-form {
-  margin: 4em;
-}
-
-.form-elements {
-  width: 100%;
-}
-
-.form-item {
-  width: 50%;
-  display: inline-block;
-}
-
-.form-input-text {
-  padding: 15px;
-  width: 90%;
-  height: 20px;
-  border-radius: 5px;
-  border: 1px solid #000;
-}
-
-.conditional_term {
-  margin-top: 4em;
-}
-
-input[type="checkbox"]{
-  width: 20px;
-  height: 20px;
-}
-
-.conditional_term label {
-  color: #808080;
-  font-size: 1.2rem;
-  margin-left: 10px;
-}
-
-.register {
-  border-radius: 25px;
-  padding: 10px 50px;
-  background-color: #502e77;
-  color: #fff;
-  margin: 3em auto;
-  display: block;;
-  font-size: 1.2em;
-  border: none;
-  letter-spacing: 5px;
-  
-}
+/*# sourceMappingURL=index.css.map */

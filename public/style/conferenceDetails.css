@@ -11,7 +11,7 @@ div.left-side figure.conf-image img {
 }
 
 div.left-side h2.figure-caption {
-  background-color: #17072A;
+  background-color: #17072a;
   color: whitesmoke;
   font-size: 1.45rem;
   padding-top: 1.25rem;
@@ -22,27 +22,41 @@ div.left-side h2.figure-caption {
 div.right-side {
   margin-left: 2rem;
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 550px;
+  height: 600px;
+  overflow: hidden;
 }
 
-div.right-side h1.conference-name {
+div.right-side div.detailsSection {
+  width: 550px;
+  margin-left: -550px;
+}
+
+div.right-side div.detailsSection h1.conference-name {
   color: #333333;
   margin-bottom: 1rem;
 }
 
-div.right-side p.conference-description {
+div.right-side div.detailsSection p.conference-description {
   margin-bottom: 2rem;
   color: #4d4d4d;
   line-height: 1.5;
   word-spacing: 1.5px;
 }
 
-div.right-side h1.speakers-label {
+div.right-side div.detailsSection h1.speakers-label {
   color: #333333;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-div.right-side div.speakers {
+div.right-side div.detailsSection div.speakers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,29 +65,29 @@ div.right-side div.speakers {
   margin-bottom: 2rem;
 }
 
-div.right-side div.speakers figure {
+div.right-side div.detailsSection div.speakers figure {
   margin: 1rem;
   text-align: center;
 }
 
-div.right-side div.speakers figure img {
+div.right-side div.detailsSection div.speakers figure img {
   border-radius: 50%;
-  border: 2px solid #29576F;
+  border: 2px solid #29576f;
   width: 60px;
   height: 60px;
 }
 
-div.right-side div.speakers figure figcaption h3 {
+div.right-side div.detailsSection div.speakers figure figcaption h3 {
   font-size: 1rem;
   color: #333333;
 }
 
-div.right-side div.speakers figure figcaption p {
+div.right-side div.detailsSection div.speakers figure figcaption p {
   font-size: 0.8rem;
   color: #4d4d4d;
 }
 
-div.right-side div.call-to-action {
+div.right-side div.detailsSection div.call-to-action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +96,7 @@ div.right-side div.call-to-action {
           justify-content: space-evenly;
 }
 
-div.right-side div.call-to-action button {
+div.right-side div.detailsSection div.call-to-action button {
   width: 260px;
   height: 42px;
   border-radius: 3rem;
@@ -91,19 +105,104 @@ div.right-side div.call-to-action button {
   outline: none;
 }
 
-div.right-side div.call-to-action button:hover {
+div.right-side div.detailsSection div.call-to-action button:hover {
   -webkit-box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.5);
 }
 
-div.right-side div.call-to-action button.register-btn {
+div.right-side div.detailsSection div.call-to-action button.register-btn {
   border: none;
-  background-color: #502E77;
+  background-color: #502e77;
   color: whitesmoke;
 }
 
-div.right-side div.call-to-action button.agenda-btn {
-  color: #502E77;
-  border: 1px solid #502E77;
+div.right-side div.detailsSection div.call-to-action button.agenda-btn {
+  color: #502e77;
+  border: 1px solid #502e77;
+}
+
+div.right-side div.registerSection .top-buttons {
+  margin: 1em 3em 3em 2em;
+}
+
+div.right-side div.registerSection .back {
+  background-color: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #808080;
+  margin-left: 1em;
+}
+
+div.right-side div.registerSection .agenda {
+  background-color: #79a236;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  color: #fff;
+  position: absolute;
+  /*right: 0;*/
+  margin-left: 23em;
+}
+
+div.right-side div.registerSection .first_name,
+div.right-side div.registerSection .last_name,
+div.right-side div.registerSection .email,
+div.right-side div.registerSection .password,
+div.right-side div.registerSection .country,
+div.right-side div.registerSection .job_title {
+  font-size: 1.2rem;
+  color: #808080;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+div.right-side div.registerSection .register-form {
+  margin: 4em;
+}
+
+div.right-side div.registerSection .form-elements {
+  width: 100%;
+}
+
+div.right-side div.registerSection .form-item {
+  width: 50%;
+  display: inline-block;
+}
+
+div.right-side div.registerSection .form-input-text {
+  padding: 15px;
+  width: 90%;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+div.right-side div.registerSection .conditional_term {
+  margin-top: 4em;
+}
+
+div.right-side div.registerSection input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+div.right-side div.registerSection .conditional_term label {
+  color: #808080;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+div.right-side div.registerSection .register {
+  border-radius: 25px;
+  padding: 10px 50px;
+  background-color: #502e77;
+  color: #fff;
+  margin: 3em auto;
+  display: block;
+  font-size: 1.2em;
+  border: none;
+  letter-spacing: 5px;
 }
 /*# sourceMappingURL=conferenceDetails.css.map */

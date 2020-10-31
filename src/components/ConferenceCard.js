@@ -64,6 +64,7 @@ export default function ConferenceCard({ conferences, onShowCalendar, isCalendar
           </ul>
         </div>
         <button className='btn-conferences'>Find all conferences</button>
+        
       </Col>
     </Row>
 

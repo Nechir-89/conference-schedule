@@ -4,6 +4,7 @@ import ConferenceCard from './components/ConferenceCard';
 import Nav from './components/Nav';
 import ConferenceDetails from './components/ConferenceDetails';
 import RegisterForm from './components/RegisterForm'
+import Footer from './components/Footer'
 
 // react router dom
 import {
@@ -75,6 +76,7 @@ class App extends React.Component {
             />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     );
   }

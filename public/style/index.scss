@@ -81,14 +81,25 @@ li {
   margin-right: 0.35rem;
 }
 
-.btn-conferences {
-  margin: 5rem auto 0 auto;
+button.btn-conferences {
+  margin: 1rem auto 2rem auto;
+  padding: 0.5rem;
   display: block;
   border-radius: 25px;
   width: 250px;
-  height: 30px;
-  background-color: #502e77;
-  color: #fff;
+  // height: 30px;
+  // background-color: #502e77;
+  color: #202020;
+  font-size: 0.85rem;
+  // font-weight: bold;
+  
+  border: 1px solid #502e77;
+  cursor: pointer;
+  &:hover {
+    background-color: #502e77;
+    color: #fff;
+    transition: background-color ease-in-out 100ms, color ease-in-out 100ms;
+  }
   /*margin-top: 5rem;*/
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoIosArrowBack } from 'react-icons/io'
-
+import {AiOutlineLeft} from 'react-icons/ai'
 class ConferenceDetails extends React.Component {
     constructor(props) {
         super(props)
@@ -89,7 +89,18 @@ class ConferenceDetails extends React.Component {
                         </form>
                     </div>
                     <div className='agendaSection'>
-
+                            <button className='back-btn'>
+                                <AiOutlineLeft />
+                                Back
+                            </button>
+                            <div><span className='at'>09:00</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#2699FB'}}>Introduction to the conference</span></div>
+                            <div><span className='at'>09:15</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#5149BB', color: 'white'}}>The importance of UX/UI for web developers</span></div>
+                            <div><span className='at'>09:45</span><span className='bar'>|</span><span className='title' style={{border: '1px solid black'}}>The Market for UX designers</span></div>
+                            <div><span className='at'>10:00</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#BCE0FD'}}>Popular Software's for UX design</span></div>
+                            <div><span className='at'>10:40</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#404040', color:'white'}}>Adobe XD</span></div>
+                            <div><span className='at'>11:00</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#28607D', color:'white'}}>Top Plugins for Adobe XD</span></div>
+                            <div><span className='at'>11:30</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#13397B', color:'white'}}>Closing Thoughts</span></div>
+                            <button className='register'>Register Now</button>
                     </div>
                 </div>
             </div>

@@ -20,22 +20,21 @@ div.left-side h2.figure-caption {
 }
 
 div.right-side {
-  margin-left: 2rem;
-  margin-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  width: 550px;
-  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (600px)[3];
+      grid-template-columns: repeat(3, 600px);
+  width: 600px;
   overflow: hidden;
 }
 
 div.right-side div.detailsSection {
-  width: 550px;
-  margin-left: -550px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  padding: 1rem;
 }
 
 div.right-side div.detailsSection h1.conference-name {
@@ -122,20 +121,28 @@ div.right-side div.detailsSection div.call-to-action button.agenda-btn {
 }
 
 div.right-side div.registerSection {
-  width: 550px;
-  margin-left: -550px;
-}
-
-div.right-side div.registerSection .top-buttons {
-  margin: 1em 3em 3em 2em;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  padding: 1rem;
 }
 
 div.right-side div.registerSection .back {
-  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
   border: none;
-  font-size: 1.2rem;
-  color: #808080;
-  margin-left: 1em;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 div.right-side div.registerSection .first_name,
@@ -152,7 +159,7 @@ div.right-side div.registerSection .job_title {
 }
 
 div.right-side div.registerSection .register-form {
-  margin: 4em;
+  margin: 1em;
 }
 
 div.right-side div.registerSection .form-elements {
@@ -200,8 +207,12 @@ div.right-side div.registerSection .register {
 }
 
 div.right-side div.agendaSection {
-  width: 550px;
-  padding: 2rem;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  padding: 1rem;
 }
 
 div.right-side div.agendaSection div {
@@ -236,23 +247,5 @@ div.right-side div.agendaSection button.back-btn {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
-}
-
-div.right-side div.agendaSection button.register {
-  width: 260px;
-  height: 42px;
-  border-radius: 3rem;
-  cursor: pointer;
-  font-size: 1.1rem;
-  outline: none;
-  border: none;
-  background-color: #502e77;
-  color: whitesmoke;
-  margin-top: 2rem;
-}
-
-div.right-side div.agendaSection button.register:hover {
-  -webkit-box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=conferenceDetails.css.map */

@@ -1,7 +1,7 @@
 import React from 'react'
 import LinkButton from './LinkButton'
 
-
+// import '../conferenceDetails.css'
 
 class ConferenceDetails extends React.Component {
     constructor(props) {

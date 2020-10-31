@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoIosArrowBack } from 'react-icons/io'
 
-import '../conferenceDetails.css'
+// import '../conferenceDetails.css'
 
 
 class RegisterForm extends React.Component {

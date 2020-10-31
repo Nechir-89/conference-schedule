@@ -54,3 +54,7 @@ notice: using SCSS may be unkown for Ana
 # October 27, 2020
 * styling the RegisterForm
 * adding location as an object property in the data file
+
+# October 31, 2020
+* Moving style files to public directory
+

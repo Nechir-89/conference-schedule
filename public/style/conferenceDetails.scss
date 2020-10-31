@@ -21,22 +21,20 @@ div.left-side {
 }
 
 div.right-side {
-    margin-left: 2rem;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: left;
-    width: 550px;
-    height: 600px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 600px);
+    width: 600px;
     overflow: hidden;
-
     div.detailsSection {
-        width: 550px;
-        margin-left: -550px;
-
+        grid-column: 1/2;
+        grid-row: 1/1;
+        padding: 1rem;
         h1.conference-name {
             color: #333333;
             margin-bottom: 1rem;
         }
+
         p.conference-description {
             margin-bottom: 2rem;
             color: #4d4d4d;
@@ -100,30 +98,21 @@ div.right-side {
         }
     }
     div.registerSection {
-        .top-buttons {
-            margin: 1em 3em 3em 2em;
-        }
+        grid-column: 2/3;
+        grid-row: 1/1;
+        padding: 1rem;
 
         .back {
-            background-color: none;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
             border: none;
-            font-size: 1.2rem;
-            color: #808080;
-            margin-left: 1em;
+            margin-bottom: 2rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
         }
-
-        .agenda {
-            background-color: #79a236;
-            padding: 6px 10px;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.2rem;
-            color: #fff;
-            position: absolute;
-            /*right: 0;*/
-            margin-left: 23em;
-        }
-
         .first_name,
         .last_name,
         .email,
@@ -138,7 +127,7 @@ div.right-side {
         }
 
         .register-form {
-            margin: 4em;
+            margin: 1em;
         }
 
         .form-elements {
@@ -186,6 +175,34 @@ div.right-side {
         }
     }
     div.agendaSection {
-        
+        grid-column: 3/4;
+        grid-row: 1/1;
+        padding: 1rem;
+        div {
+            margin: 1.5rem 0;
+
+            span.at {
+                margin-right: 0.5rem;
+            }
+            span.bar {
+                margin-right: 0.5rem;
+            }
+            span.title {
+                word-spacing: 2px;
+                border-radius: 2rem;
+                padding: 0.3rem 0.75rem;
+            }
+        }
+        button.back-btn {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            margin-bottom: 2rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+        }
     }
 }

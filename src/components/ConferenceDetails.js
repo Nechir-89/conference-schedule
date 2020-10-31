@@ -1,10 +1,13 @@
 import React from 'react'
 import { IoIosArrowBack } from 'react-icons/io'
-
+import {AiOutlineLeft} from 'react-icons/ai'
 class ConferenceDetails extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            gridColumnDetails: '1/2',
+            gridColumnRegister: '2/3',
+            gridColumnAgenda: '3/4'
         }
     }
 
@@ -20,7 +23,7 @@ class ConferenceDetails extends React.Component {
                 </div>
                 {/* col 2 */}
                 <div className='right-side'>
-                    <div className='detailsSection'>
+                    <div className='detailsSection' style={{'grid-column': this.state.gridColumnDetails}}>
                         <h1 className='conference-name'>{this.props.name}</h1>
                         <p className='conference-description'>
                             {this.props.description}
@@ -42,16 +45,15 @@ class ConferenceDetails extends React.Component {
 
                         </div>
                         <div className='call-to-action'>
-                            <button className='register-btn' to='/RegisterForm/'>Register Now</button>
-                            <button className='agenda-btn'>Agenda</button>
+                            <button className='register-btn' onClick={()=>{this.setState({gridColumnDetails: '2/3', gridColumnRegister: '1/2'})}}>Register Now</button>
+                            <button className='agenda-btn' onClick={()=>{this.setState({gridColumnDetails: '3/4', gridColumnAgenda: '1/2'})}}>Agenda</button>
                         </div>
                     </div>
-                    <div className='registerSection'>
-                        <div className='top-buttons'>
+                    <div className='registerSection' style={{gridColumn: this.state.gridColumnRegister}}>
+                        <div className='top-buttons' onClick={()=>{this.setState({gridColumnDetails:'1/2', gridColumnRegister:'2/3'})}}>
                             <button className='back'>
                                 <IoIosArrowBack color='#000' size={30} />Back
-                                </button>
-                            <button className='agenda'>Agenda</button>
+                            </button>
                         </div>
                         <form className='register-form'>
                             <ul className='form-elements'>
@@ -88,8 +90,18 @@ class ConferenceDetails extends React.Component {
                             <button className='register'>Register</button>
                         </form>
                     </div>
-                    <div className='agendaSection'>
-
+                    <div className='agendaSection' style={{gridColumn: this.state.gridColumnAgenda}}>
+                            <button className='back-btn' onClick={()=>{this.setState({gridColumnDetails: '1/2', gridColumnAgenda: '3/4'})}}>
+                                <AiOutlineLeft />
+                                Back
+                            </button>
+                            <div><span className='at'>09:00</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#2699FB'}}>Introduction to the conference</span></div>
+                            <div><span className='at'>09:15</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#5149BB', color: 'white'}}>The importance of UX/UI for web developers</span></div>
+                            <div><span className='at'>09:45</span><span className='bar'>|</span><span className='title' style={{border: '1px solid black'}}>The Market for UX designers</span></div>
+                            <div><span className='at'>10:00</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#BCE0FD'}}>Popular Software's for UX design</span></div>
+                            <div><span className='at'>10:40</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#404040', color:'white'}}>Adobe XD</span></div>
+                            <div><span className='at'>11:00</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#28607D', color:'white'}}>Top Plugins for Adobe XD</span></div>
+                            <div><span className='at'>11:30</span><span className='bar'>|</span><span className='title' style={{backgroundColor: '#13397B', color:'white'}}>Closing Thoughts</span></div>
                     </div>
                 </div>
             </div>

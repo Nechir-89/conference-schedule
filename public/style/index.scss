@@ -9,7 +9,7 @@
 body {
   background-color: #efefef;
 }
-/* Main page */ 
+/* Main page */
 .bg-color {
   background-color: #f2f2f2;
 }
@@ -92,7 +92,7 @@ button.btn-conferences {
   color: #202020;
   font-size: 0.85rem;
   // font-weight: bold;
-  
+
   border: 1px solid #502e77;
   cursor: pointer;
   &:hover {
@@ -103,15 +103,26 @@ button.btn-conferences {
   /*margin-top: 5rem;*/
 }
 
-.search-bar {
-  border-radius: 25px;
-  width: 400px;
-  height: 20px;
-  background: url("/images/search.svg") no-repeat;
-  background-position: 90% 0;
-  background-size: 20px;
+// search
+form.conf-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.search-text {
+  // border-radius: 25px;
+  width: 400px;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: 1px solid;
+  // background: url("/images/search.svg") no-repeat;
+  // background-position: 90% 0;
+  // background-size: 20px;
+}
+form svg {
+  margin-left: -2rem;
+}
 .form-position {
   display: block;
   text-align: center;
@@ -125,14 +136,14 @@ button.btn-conferences {
 
 .btn-calendar {
   border: none;
-  margin-left: 1rem;
+  margin-left: 3.5rem;
 }
 
 /* Nav */
-div.top-navigation{
-  border-bottom: 1px solid #CCF28E;
+div.top-navigation {
+  border-bottom: 1px solid #ccf28e;
 }
-div.top-navigation  nav{
+div.top-navigation nav {
   max-width: 1366px;
   margin: 0px auto;
 }
@@ -150,9 +161,9 @@ ul.row {
   font-size: 0.9rem;
   text-decoration: none;
   color: whitesmoke;
-  &:hover{
+  &:hover {
     // font-weight: bold;
-    color: #CCF28E;
+    color: #ccf28e;
   }
 }
 
@@ -161,8 +172,8 @@ ul.row {
   margin-left: 15px;
   color: whitesmoke;
 }
-nav ul.right li:hover{
-  color: #CCF28E;
+nav ul.right li:hover {
+  color: #ccf28e;
 }
 
 ul.nav {
@@ -227,7 +238,6 @@ header {
 // RegisterForm component
 
 div.right-side {
-  
   button.back {
     background-color: none;
     border: none;
@@ -238,4 +248,40 @@ div.right-side {
     border: none;
     font-size: 2rem;
   }
+}
+
+@media (max-width: 992px) {
+  header {
+    // position: absolute;
+    margin-left: 4rem;
+    top: 5rem;
+    h1 {
+      // margin-bottom: 1rem;
+      font-size: 2rem;
+      // color: #a9d562;
+    }
+    p {
+      // width: 400px;
+      // color: rgba(169, 213, 98, 0.8);
+      font-size: 1rem;
+      // line-height: 1.5;
+      // word-spacing: 2px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    margin-left: 1rem;
+    top: 4rem;
+    h1{
+      font-size: 1.3rem;
+      margin-bottom: 0.2rem;
+    }
+    p{
+      font-size: 0.8rem;
+      width: 290px
+    }
+  }
+  
 }

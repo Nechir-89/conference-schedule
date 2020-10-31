@@ -123,13 +123,27 @@ button.btn-conferences:hover {
   transition: background-color ease-in-out 100ms, color ease-in-out 100ms;
 }
 
-.search-bar {
-  border-radius: 25px;
+form.conf-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-text {
   width: 400px;
-  height: 20px;
-  background: url("/images/search.svg") no-repeat;
-  background-position: 90% 0;
-  background-size: 20px;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: 1px solid;
+}
+
+form svg {
+  margin-left: -2rem;
 }
 
 .form-position {
@@ -157,12 +171,12 @@ button.btn-conferences:hover {
 
 .btn-calendar {
   border: none;
-  margin-left: 1rem;
+  margin-left: 3.5rem;
 }
 
 /* Nav */
 div.top-navigation {
-  border-bottom: 1px solid #CCF28E;
+  border-bottom: 1px solid #ccf28e;
 }
 
 div.top-navigation nav {
@@ -193,7 +207,7 @@ ul.row {
 }
 
 .nav-link:hover {
-  color: #CCF28E;
+  color: #ccf28e;
 }
 
 .nav li {
@@ -203,7 +217,7 @@ ul.row {
 }
 
 nav ul.right li:hover {
-  color: #CCF28E;
+  color: #ccf28e;
 }
 
 ul.nav {
@@ -283,5 +297,33 @@ div.right-side button.back {
 div.right-side button.agenda {
   border: none;
   font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+  header {
+    margin-left: 4rem;
+    top: 5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    margin-left: 1rem;
+    top: 4rem;
+  }
+  header h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+  }
+  header p {
+    font-size: 0.8rem;
+    width: 290px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

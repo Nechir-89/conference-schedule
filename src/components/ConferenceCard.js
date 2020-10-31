@@ -4,8 +4,8 @@ import { FaCalendarAlt } from 'react-icons/fa'
 import { MdLocationOn } from 'react-icons/md'
 import { Link } from "react-router-dom";
 
-
-export default function ConferenceCard({ conferences, onShowCalendar, isCalendarShown, setData }) {
+import {BsSearch} from 'react-icons/bs'
+export default function ConferenceCard({ conferences, isCalendarShown, setData }) {
 
   return (
     <Row>
@@ -18,14 +18,12 @@ export default function ConferenceCard({ conferences, onShowCalendar, isCalendar
         </header>
         {/* search */}
         <div className='form-position'>
-          <form>
-            <input type='text' placeholder='search' className='search-bar' />
-            <button onClick={onShowCalendar} className='btn-calendar'>
-              <FaCalendarAlt color='000' size={22} />
+          <form className='conf-search'>
+            <input type='text' placeholder='search' className='search-text' />
+            <BsSearch />
+            <button className='btn-calendar'>
+              <FaCalendarAlt color='#202020' size={22} />
             </button>
-            {isCalendarShown &&
-              <input type='date' />
-            }
           </form>
         </div>
         {/* conference cards */}

@@ -103,15 +103,24 @@ li {
   margin-right: 0.35rem;
 }
 
-.btn-conferences {
-  margin: 5rem auto 0 auto;
+button.btn-conferences {
+  margin: 1rem auto 2rem auto;
+  padding: 0.5rem;
   display: block;
   border-radius: 25px;
   width: 250px;
-  height: 30px;
+  color: #202020;
+  font-size: 0.85rem;
+  border: 1px solid #502e77;
+  cursor: pointer;
+  /*margin-top: 5rem;*/
+}
+
+button.btn-conferences:hover {
   background-color: #502e77;
   color: #fff;
-  /*margin-top: 5rem;*/
+  -webkit-transition: background-color ease-in-out 100ms, color ease-in-out 100ms;
+  transition: background-color ease-in-out 100ms, color ease-in-out 100ms;
 }
 
 .search-bar {
